@@ -1,6 +1,9 @@
 package com.spring.core.chap02;
 
-public class FrenchCorse {
+import org.springframework.stereotype.Component;
+
+@Component(value = "fc")
+public class FrenchCorse implements Course {
 
     public void combineMenu(){
         System.out.println("====== 프렌치 코스 구성 ======");

@@ -7,11 +7,12 @@ import org.springframework.stereotype.Component;
 @Component(value = "ac")
 public class AsianRestaurant implements Restaurant {
     private Chef chef;
-    private SushiCourse course = new SushiCourse();
+    private Course course;
 
     @Autowired
-    public AsianRestaurant(@Qualifier("kc")Chef chef) {
+    public AsianRestaurant(@Qualifier("kc")Chef chef,@Qualifier("sc") Course course) {
         this.chef = chef;
+        this.course=course;
     }
 
     public void order(){

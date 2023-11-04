@@ -1,6 +1,9 @@
 package com.spring.core.chap02;
 
-public class SushiCourse {
+import org.springframework.stereotype.Component;
+
+@Component(value = "sc")
+public class SushiCourse implements Course{
     public void combineMenu() {
         System.out.println("====== 스시 코스 구성 ======");
         System.out.println("1. 대합 맑은국");
