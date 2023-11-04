@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class PersonTest {
     @Test
     void lombokTest(){
-        Person person = new Person();
-        person.setName("김철수");
-        person.setAge(30);
-
-        String name = person.getName();
-        System.out.println("person = " + person);
-        new Person("박영희",35);
+//        Person person = new Person();
+//        person.setName("김철수");
+//        person.setAge(30);
+//
+//        String name = person.getName();
+//        System.out.println("person = " + person);
+//        new Person("박영희",35);
     }
 
 }
